@@ -58,9 +58,11 @@ h1 {
 }
 
 /* VIDEO */
-video {
-  width: 100%;
-  height: 100%;
+iframe {
+	width: 100%;
+	height: 468px;
+	border: 0;
+	outline: none;
 }
 
 /* USER */
@@ -82,6 +84,11 @@ body.helen {
     width: 50%;
   }
 }
+
+@media (max-width: 992px) {
+   iframe {
+      height: 269px;
+  }
 
 @media screen and (max-width: 544px) {
   #container  {

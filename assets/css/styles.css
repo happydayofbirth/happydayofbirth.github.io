@@ -4,6 +4,8 @@
   src: url(../font/aAlloyInk.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 /* GRID */
 * {
     box-sizing: border-box;
@@ -30,7 +32,7 @@ body {
   margin: 0px;
   overflow-y: scroll;
   overflow-x: hidden;
-  font-family: birthday, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   background-color: #E8EDEE;
   color: #4682B4;
@@ -49,20 +51,44 @@ body {
 
 /* TYPOGRAPHY */
 .home h1 {
-	font-size: 6.2rem;
+	font-size: 100px;
 }
 
 h1 {
-	font-size: 3.8rem;
+	font-size: 62px;
+	text-align: center;
+	font-family: birthday, sans-serif;
+}
+
+p {
 	text-align: center;
 }
 
-/* VIDEO */
-iframe {
-	width: 100%;
-	height: 540px;
-	border: 0;
-	outline: none;
+/* BUTTON */
+.buttonWrapper {
+	margin: 40px auto 0px;
+    text-align: center;
+}
+
+.button {
+    background-color: #4682B4;
+	font-size: 16px;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0 10px 0 0;
+}
+
+.button:hover {
+    background-color: #255e8e;
+}
+
+a.button {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button:first-child {
+    margin: 0 10px 0 0;
 }
 
 /* USER */
@@ -71,18 +97,15 @@ body.helen {
 	color: #14A4BF;
 }
 
-@media (max-width: 1500px) {
-   iframe {
-      height: 490px;
-  }
+.helen .button {
+	background-color: #14A4BF;
 }
 
-@media (max-width: 1300px) {
-   iframe {
-      height: 417px;
-  }
+.helen .button:hover {
+    background-color: #0b849a;
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 1258px) {
   #container  {
 	width: 80%;
@@ -96,42 +119,8 @@ body.helen {
     width: 50%;
   }
   
-  iframe {
-      height: 542px;
-  }
-}
-
-@media (max-width: 1080px) {
-   iframe {
-      height: 463px;
-  }
-}
-
-@media (max-width: 992px) {
-   iframe {
-      height: 395px;
-  }
-}
-
-@media (max-width: 836px) {
   h1 {
-	font-size: 3.4rem;
-  }
-  
-   iframe {
-      height: 360px;
-  }
-}
-
-@media (max-width: 772px) {
-   iframe {
-      height: 326px;
-  }
-}
-
-@media (max-width: 645px) {
-   iframe {
-      height: 268px;
+	font-size: 52px;
   }
 }
 
@@ -140,15 +129,11 @@ body.helen {
 	width: 100%;
   }
   
-  h1 {
-	font-size: 2.6rem;
-  }
-  
   .col-4 {
       width: 100%;
   }
   
-  iframe {
-    height: 259px;
+  h1 {
+	font-size: 48px;
   }
 }

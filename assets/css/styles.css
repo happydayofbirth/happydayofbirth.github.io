@@ -1,0 +1,94 @@
+/* FONTS */
+@font-face {
+  font-family: birthday;
+  src: url(../font/aAlloyInk.otf);
+}
+
+/* GRID */
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+[class*="col-"] {
+	float: left;
+  padding: 0 20px;
+}
+
+.col-4{width:33.333333%;}
+.col-6 {width: 50%;}
+.col-8{width:66.666667%;}
+.col-12 {width: 100%;}
+
+/* BASE */
+body {
+  margin: 0px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: birthday, sans-serif;
+  font-size: 18px;
+  background-color: #E8EDEE;
+  color: #4682B4;
+  word-wrap: break-word;
+}
+
+#container  {
+  position: fixed;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clear {clear: both;}
+
+/* TYPOGRAPHY */
+.home h1 {
+	font-size: 6.2rem;
+}
+
+h1 {
+	font-size: 3.8rem;
+	text-align: center;
+}
+
+/* VIDEO */
+video {
+  width: 100%;
+  height: 100%;
+}
+
+/* USER */
+/* --- Helen --- */
+body.helen {
+	color: #14A4BF;
+}
+
+@media screen and (max-width: 1258px) {
+  #container  {
+	width: 80%;
+  }
+  
+  .col-8 {
+    width: 100%;
+  }
+  
+  .col-4 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  #container  {
+	width: 100%;
+  }
+  
+  .col-4 {
+      width: 100%;
+  }
+}
